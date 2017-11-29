@@ -70,6 +70,7 @@ int main(int argc, char ** argv)
     string netlistname = temp3.substr(0,pos);
 
     olines.push_back("module " + netlistname + "(Clk, Rst");
+    olines.push_back("input Clk, Rst;\n");
 
     for(vector<string>::iterator itr = lines.begin(); itr != lines.end(); ++itr) {
         line = *itr;
